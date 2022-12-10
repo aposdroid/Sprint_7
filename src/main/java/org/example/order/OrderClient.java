@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-public class OrderData {
+public class OrderClient {
     protected final String BASE_URI = "http://qa-scooter.praktikum-services.ru";
     protected final String ROOT = "/api/v1/orders";
 

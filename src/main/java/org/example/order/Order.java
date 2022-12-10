@@ -1,8 +1,8 @@
-package org.example.courier;
+package org.example.order;
 
 import java.util.List;
 
-public class CreateOrder {
+public class Order {
 
     private String firstName;
     private String lastName;
@@ -14,10 +14,10 @@ public class CreateOrder {
     private String comment;
     private List<String> color;
 
-    public CreateOrder() {
+    public Order() {
     }
 
-    public CreateOrder(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, List<String> color) {
+    public Order(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, List<String> color) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -100,5 +100,4 @@ public class CreateOrder {
     public void setColor(List<String> color) {
         this.color = color;
     }
-
 }
