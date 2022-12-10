@@ -14,8 +14,6 @@ public class CreateCourierTest {
     private final CourierChecks checks = new CourierChecks();
     private final CourierGenerator generator = new CourierGenerator();
 
-    private int courierId;
-
     @Test
     @DisplayName("Verification of courier creation, then delete him")
     @Description("Проверим, что:\n" +
