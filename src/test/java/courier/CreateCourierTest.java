@@ -7,12 +7,14 @@ import org.example.courier.Courier;
 import org.example.courier.CourierChecks;
 import org.example.courier.CourierClient;
 import org.example.courier.CourierGenerator;
+import org.junit.After;
 import org.junit.Test;
 
 public class CreateCourierTest {
     private final CourierClient client = new CourierClient();
     private final CourierChecks checks = new CourierChecks();
     private final CourierGenerator generator = new CourierGenerator();
+    private int courierId;
 
     @Test
     @DisplayName("Verification of courier creation, then delete him")
@@ -30,9 +32,7 @@ public class CreateCourierTest {
                             courier.setFirstName(null);//убрали ненужное для логина поле
         Response responseId = client.login(courier);//залогинились в созданный аккаунт
         responseId.then().log().all();
-        int courierId = responseId.path("id");//вычислили курьера по айди
-        Response responseDelete = client.delete(courierId);//удалили курьера по айди
-        checks.deleteSuccessfully(responseDelete);//проверили ответ
+        courierId = responseId.path("id");//вычислили курьера по айди
     }
 
     @Test
@@ -57,5 +57,13 @@ public class CreateCourierTest {
         courier.setPassword(null);
         Response response = client.create(courier);
                             checks.creationWithoutPasswordFailed(response);
+    }
+
+    @After
+    public void deleteCourier(){
+    if (courierId > 0){
+        Response responseDelete = client.delete(courierId);//удалили курьера по айди
+        checks.deleteSuccessfully(responseDelete);//проверили ответ
+    }
     }
 }

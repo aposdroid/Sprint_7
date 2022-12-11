@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbc0179-9f77-4822-9120-8d2037f96317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9dbc0179-9f77-4822-9120-8d2037f96317" name="Changes" comment="убрал лишнее">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/Courier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/order/OrderChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/order/OrderChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/order/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/order/OrderClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/courier/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/courier/CreateCourierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/courier/LoginCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/courier/LoginCourierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/order/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/order/CreateOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/order/OrderListInResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/order/OrderListInResponseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +48,7 @@
       <recent name="org.example.courier" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateCourierTest">
+  <component name="RunManager" selected="JUnit.All in Sprint_7">
     <configuration name="All in Sprint_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <option name="PACKAGE_NAME" value="" />
@@ -117,17 +104,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderListInResponseTest.orderListInResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginCourierTest.loginCourier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="order.*" />
+          <option name="PATTERN" value="courier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="order" />
-      <option name="MAIN_CLASS_NAME" value="order.OrderListInResponseTest" />
-      <option name="METHOD_NAME" value="orderListInResponse" />
+      <option name="PACKAGE_NAME" value="courier" />
+      <option name="MAIN_CLASS_NAME" value="courier.LoginCourierTest" />
+      <option name="METHOD_NAME" value="loginCourier" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateCourierTest" />
         <item itemvalue="JUnit.All in Sprint_7" />
-        <item itemvalue="JUnit.CreateOrderTest.orderCreation" />
-        <item itemvalue="JUnit.OrderListInResponseTest.orderListInResponse" />
+        <item itemvalue="JUnit.LoginCourierTest.loginCourier" />
         <item itemvalue="JUnit.CreateCourierTest.createCourier" />
+        <item itemvalue="JUnit.CreateCourierTest" />
+        <item itemvalue="JUnit.CreateOrderTest.orderCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +139,21 @@
       <option name="presentableId" value="Default" />
       <updated>1670266557958</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1670665739221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670665739221</updated>
+    </task>
+    <task id="LOCAL-00002" summary="убрал лишнее">
+      <created>1670665872923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670665872923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,5 +166,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="убрал лишнее" />
+    <option name="LAST_COMMIT_MESSAGE" value="убрал лишнее" />
   </component>
 </project>
