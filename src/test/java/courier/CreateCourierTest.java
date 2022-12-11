@@ -27,7 +27,7 @@ public class CreateCourierTest {
 
     public void createCourier() {
         Courier courier = generator.random();//создали рандомный логин
-        Response response = client.create(courier);//создали курьера
+        Response response = client.createCourier(courier);//создали курьера
                             checks.createdSuccessfully(response);//проверили ответ
                             courier.setFirstName(null);//убрали ненужное для логина поле
         Response responseId = client.login(courier);//залогинились в созданный аккаунт
@@ -42,8 +42,8 @@ public class CreateCourierTest {
                  "-если создать пользователя с логином, который уже есть, возвращается ошибка.")
     public void createCourierTwice(){
         Courier courier = generator.random();
-        client.create(courier);
-        Response response = client.create(courier);
+        client.createCourier(courier);
+        Response response = client.createCourier(courier);
         checks.creationFailed(response);
     }
 
@@ -55,14 +55,14 @@ public class CreateCourierTest {
     public void createWithoutPassword() {
         Courier courier = generator.generic();
         courier.setPassword(null);
-        Response response = client.create(courier);
+        Response response = client.createCourier(courier);
                             checks.creationWithoutPasswordFailed(response);
     }
 
     @After
     public void deleteCourier(){
     if (courierId > 0){
-        Response responseDelete = client.delete(courierId);//удалили курьера по айди
+        Response responseDelete = client.deleteCourier(courierId);//удалили курьера по айди
         checks.deleteSuccessfully(responseDelete);//проверили ответ
     }
     }

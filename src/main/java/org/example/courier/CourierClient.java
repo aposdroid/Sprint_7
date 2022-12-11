@@ -7,10 +7,10 @@ import static io.restassured.RestAssured.given;
 
 public class CourierClient {
 
-    protected final String BASE_URI = "http://qa-scooter.praktikum-services.ru";
+    public static final String BASE_URI = "http://qa-scooter.praktikum-services.ru";
     protected final String ROOT = "/api/v1/courier";
 
-    public Response create(Courier courier){
+    public Response createCourier(Courier courier){
     return given().log().all()
             .contentType(ContentType.JSON)
             .baseUri(BASE_URI)
@@ -28,7 +28,7 @@ public class CourierClient {
             .post(ROOT + "/login");
     }
 
-    public Response delete(int courierId){
+    public Response deleteCourier(int courierId){
         String json = String.format("{\"id\": \"%d\"}", courierId);
         return given().log().all()
                 .contentType(ContentType.JSON)

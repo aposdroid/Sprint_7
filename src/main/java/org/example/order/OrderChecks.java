@@ -3,6 +3,7 @@ package org.example.order;
 import io.restassured.response.Response;
 
 import static org.hamcrest.CoreMatchers.notNullValue;
+import static java.net.HttpURLConnection.*;
 
 public class OrderChecks {
     public void orderCreatedSuccessfully(Response response){
@@ -10,13 +11,13 @@ public class OrderChecks {
                 .extract().response();
                 response.then().assertThat().body("track", notNullValue())
                 .and()
-                .statusCode(201);
+                .statusCode(HTTP_CREATED);
     }
 
     public void orderListNotNull(Response response){
                 response.then().log().all()
                 .assertThat().body("orders", notNullValue())
                 .and()
-                .statusCode(200);
+                .statusCode(HTTP_OK);
     }
 }
