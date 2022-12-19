@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbc0179-9f77-4822-9120-8d2037f96317" name="Changes" comment="убрал удаление курьера в @After">
+    <list default="true" id="9dbc0179-9f77-4822-9120-8d2037f96317" name="Changes" comment="Исправил статус коды.&#10;Переименовал create в createCourier.&#10;Переименовал delete в deleteCourier.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/courier/CourierClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/order/OrderChecks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/order/OrderChecks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/order/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/order/OrderClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/courier/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/courier/CreateCourierTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670749488433</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Исправил статус коды.&#10;Переименовал create в createCourier.&#10;Переименовал delete в deleteCourier.">
+      <created>1670781484125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670781484125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +185,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="убрал лишнее" />
     <MESSAGE value="убрал удаление курьера в @After" />
-    <option name="LAST_COMMIT_MESSAGE" value="убрал удаление курьера в @After" />
+    <MESSAGE value="Исправил статус коды.&#10;Переименовал create в createCourier.&#10;Переименовал delete в deleteCourier." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил статус коды.&#10;Переименовал create в createCourier.&#10;Переименовал delete в deleteCourier." />
   </component>
 </project>
